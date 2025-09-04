@@ -3,4 +3,10 @@ name = "emmet_lsp"
 version = "0.1.0"
 edition = "2024"
 
+[[bin]]
+name = "emmetls"
+path = "src/main.rs"
+
 [dependencies]
+tokio = { version = "1.47.1", features = ["full"] }
+tower-lsp-server = "0.22.1"
